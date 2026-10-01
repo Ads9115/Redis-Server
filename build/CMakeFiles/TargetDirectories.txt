@@ -1,0 +1,3 @@
+/home/bambublaster/Projects/Redis/build/CMakeFiles/RedisServer.dir
+/home/bambublaster/Projects/Redis/build/CMakeFiles/edit_cache.dir
+/home/bambublaster/Projects/Redis/build/CMakeFiles/rebuild_cache.dir

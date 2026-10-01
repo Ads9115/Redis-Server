@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/bambublaster/Projects/Redis/build",
+  "command": "/usr/bin/c++  -I/home/bambublaster/Projects/Redis/include -std=gnu++17 -o CMakeFiles/RedisServer.dir/src/main.cpp.o -c /home/bambublaster/Projects/Redis/src/main.cpp",
+  "file": "/home/bambublaster/Projects/Redis/src/main.cpp",
+  "output": "CMakeFiles/RedisServer.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/bambublaster/Projects/Redis/build",
+  "command": "/usr/bin/c++  -I/home/bambublaster/Projects/Redis/include -std=gnu++17 -o CMakeFiles/RedisServer.dir/src/RedisServer.cpp.o -c /home/bambublaster/Projects/Redis/src/RedisServer.cpp",
+  "file": "/home/bambublaster/Projects/Redis/src/RedisServer.cpp",
+  "output": "CMakeFiles/RedisServer.dir/src/RedisServer.cpp.o"
+},
+{
+  "directory": "/home/bambublaster/Projects/Redis/build",
+  "command": "/usr/bin/c++  -I/home/bambublaster/Projects/Redis/include -std=gnu++17 -o CMakeFiles/RedisServer.dir/src/RedisCommandHandler.cpp.o -c /home/bambublaster/Projects/Redis/src/RedisCommandHandler.cpp",
+  "file": "/home/bambublaster/Projects/Redis/src/RedisCommandHandler.cpp",
+  "output": "CMakeFiles/RedisServer.dir/src/RedisCommandHandler.cpp.o"
+}
+]
