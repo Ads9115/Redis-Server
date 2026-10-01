@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/bambublaster/Projects/Redis/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
