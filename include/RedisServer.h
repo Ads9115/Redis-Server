@@ -13,6 +13,9 @@ private:
     int port;
     int server_socket;
     std::atomic<bool> running;
+
+    // Setup sognal handling for graceful shutdown (ctrl + c)
+    void setupSignalHandler();
 };
 
 #endif

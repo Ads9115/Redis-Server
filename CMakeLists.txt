@@ -10,6 +10,7 @@ add_executable(RedisServer
     src/main.cpp
     src/RedisServer.cpp
     src/RedisCommandHandler.cpp
+    src/RedisDatabase.cpp
     )
 
 target_include_directories(RedisServer PRIVATE include)
