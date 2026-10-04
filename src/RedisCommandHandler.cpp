@@ -72,7 +72,7 @@ std::string RedisCommandHandler::processCommand(const std::string &commandLine){
     std::string cmd = tokens[0];
     std::transform(cmd.begin(), cmd.end(), cmd.begin(), ::toupper);
     std::ostringstream response;
-    RedisDatabase& db = RedisDatabase()::getInstance();
+    RedisDatabase& db = RedisDatabase::getInstance();
 
 
     //Check commands

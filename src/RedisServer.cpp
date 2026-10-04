@@ -62,7 +62,7 @@ void RedisServer::run(){
         return;
     }
 
-    std::cout<< "Redis Server is Listening on port" << port << "\n";
+    std::cout<< "Redis Server is Listening on port " << port << "\n";
 
     std::vector<std::thread> threads;
     RedisCommandHandler cmdHandler;
@@ -96,7 +96,7 @@ void RedisServer::run(){
 
     // Before shutdown persist the database.
     if (RedisDatabase::getInstance().dump("dump.my_rdb"))
-        std::cout << "Databse Dumped to dump.my_rdb\n";
+        std::cout << "Database Dumped to dump.my_rdb\n";
     else
         std::cerr << "Error dumping databse\n";
 }
