@@ -42,7 +42,7 @@ std::vector<std::string> parseRespCommand(const std::string &input){
         if (pos >= input.size() || input[pos] != '$') break;
         crlf = input.find("\r\n", pos);
         if (crlf == std::string::npos) break;
-        int len = std::stoi(input.substr(pos, crlf - pos));
+        int len = std::stoi(input.substr(pos + 1, crlf - pos));
         pos = crlf + 2;
 
         if (pos + len > input.size()) break;
@@ -128,9 +128,13 @@ std::string RedisCommandHandler::processCommand(const std::string &commandLine){
     } else if(cmd == "EXPIRE") {
         if (tokens.size() < 3)
             response << "-Error: EXPIRE requires key and time in seconds\r\n";
-        else
-            if(db.expire(tokens[1], tokens[2]))
+        else {
+            int seconds = std::stoi(tokens[2]);
+            if(db.expire(tokens[1], seconds))
                 response << "+OK\r\n";
+            else
+                response << "-Error: Key Not Foundr\r\n";
+        }
     } else if (cmd == "RENAME") {
         if (tokens.size() < 3)
             response << "-Error: RENAME required old key name and new key name\r\n";

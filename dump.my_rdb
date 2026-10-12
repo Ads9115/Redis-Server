@@ -1,0 +1,10 @@
+K language C++
+K project my-redis
+K Name Alice
+L fruits apple banana orange
+L colors red green blue
+L frameworks Qt OpenGL GLFW
+H user:100 name:Bob age:30 email:bob@example.com
+H user:200 name:Eve age:25 email:eve@example.com
+H product:1 name:Keyboard price:2499 category:electronics
+H product:2 name:Mouse price:999 category:electronics
